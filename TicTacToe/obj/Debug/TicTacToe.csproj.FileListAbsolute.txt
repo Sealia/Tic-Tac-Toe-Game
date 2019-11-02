@@ -1,0 +1,9 @@
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.Form1.resources
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.pdb
