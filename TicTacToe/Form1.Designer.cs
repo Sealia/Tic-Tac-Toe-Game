@@ -160,7 +160,7 @@
             this.Xwins.Name = "Xwins";
             this.Xwins.Size = new System.Drawing.Size(100, 23);
             this.Xwins.TabIndex = 12;
-            this.Xwins.Text = "label1";
+            this.Xwins.Text = "X wins:";
             // 
             // Owins
             // 
@@ -168,7 +168,7 @@
             this.Owins.Name = "Owins";
             this.Owins.Size = new System.Drawing.Size(100, 23);
             this.Owins.TabIndex = 13;
-            this.Owins.Text = "label2";
+            this.Owins.Text = "O wins: ";
             // 
             // Draws
             // 
@@ -176,7 +176,7 @@
             this.Draws.Name = "Draws";
             this.Draws.Size = new System.Drawing.Size(100, 23);
             this.Draws.TabIndex = 14;
-            this.Draws.Text = "label3";
+            this.Draws.Text = "Draws: ";
             // 
             // Form1
             // 
