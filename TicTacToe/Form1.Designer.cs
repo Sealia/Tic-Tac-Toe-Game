@@ -134,6 +134,7 @@
             this.newGameButton.TabIndex = 9;
             this.newGameButton.Text = "New Game";
             this.newGameButton.UseVisualStyleBackColor = true;
+            this.newGameButton.Click += new System.EventHandler(this.newGameButton_Click);
             // 
             // resetButton
             // 
@@ -168,7 +169,7 @@
             this.Owins.Name = "Owins";
             this.Owins.Size = new System.Drawing.Size(100, 23);
             this.Owins.TabIndex = 13;
-            this.Owins.Text = "O wins: ";
+            this.Owins.Text = "O wins:";
             // 
             // Draws
             // 
@@ -176,7 +177,7 @@
             this.Draws.Name = "Draws";
             this.Draws.Size = new System.Drawing.Size(100, 23);
             this.Draws.TabIndex = 14;
-            this.Draws.Text = "Draws: ";
+            this.Draws.Text = "Draws:";
             // 
             // Form1
             // 

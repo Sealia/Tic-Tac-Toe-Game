@@ -42,6 +42,11 @@ namespace TicTacToe
             InitializeComponent();
         }
 
+        private void newGameButton_Click(object sender, EventArgs e)
+        {
+            NewGame();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             Xwins.Text += " " + xWins;
@@ -51,7 +56,14 @@ namespace TicTacToe
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Close();
+        }
 
+        private void NewGame()
+        {
+            player = 2;
+            turns = 0;
+            A00.Text = A01.Text = A02.Text = A11.Text = A12.Text = A10.Text = A20.Text = A21.Text = A22.Text = "";
         }
     }
 }
