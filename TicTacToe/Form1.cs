@@ -34,6 +34,12 @@ namespace TicTacToe
                     turns++;
                 }
             }
+
+            if(IsADraw())
+            {
+                MessageBox.Show("Tie Game!");
+                draws++;
+            }
             
         }
 
@@ -64,6 +70,18 @@ namespace TicTacToe
             player = 2;
             turns = 0;
             A00.Text = A01.Text = A02.Text = A11.Text = A12.Text = A10.Text = A20.Text = A21.Text = A22.Text = "";
+        }
+
+        private bool IsADraw()
+        {
+            if(turns == 9)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
