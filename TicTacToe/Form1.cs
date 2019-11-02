@@ -36,21 +36,6 @@ namespace TicTacToe
                 }
             }
 
-            if (IsADraw())
-            {
-                MessageBox.Show("Tie Game!");
-                draws++;
-                Draws.Text ="Draws: " + draws;
-
-                for (int i = 0; i < 3; i++)
-                {
-                    for (int j = 0; j < 3; j++)
-                    {
-                        buttons[i, j].Enabled = false;
-                    }
-                }
-            }
-
             if (CheckWinner())
             {
                 MessageBox.Show("The Winner is " + button.Text);
@@ -68,6 +53,22 @@ namespace TicTacToe
                 for(int i=0; i<3;i++)
                 {
                     for(int j=0; j<3; j++)
+                    {
+                        buttons[i, j].Enabled = false;
+                    }
+                }
+                turns++;
+            }
+
+            if (IsADraw())
+            {
+                MessageBox.Show("Tie Game!");
+                draws++;
+                Draws.Text = "Draws: " + draws;
+
+                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
                     {
                         buttons[i, j].Enabled = false;
                     }
@@ -110,6 +111,12 @@ namespace TicTacToe
             player = 2;
             turns = 0;
             A00.Text = A01.Text = A02.Text = A11.Text = A12.Text = A10.Text = A20.Text = A21.Text = A22.Text = "";
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            NewGame();
+            draws = xWins = oWins = 0;
         }
 
         private bool IsADraw()
