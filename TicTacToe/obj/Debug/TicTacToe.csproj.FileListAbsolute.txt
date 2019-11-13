@@ -7,3 +7,7 @@ C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.Pr
 C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
 C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.exe
 C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\bin\Debug\TicTacToe.exe.manifest
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\bin\Debug\TicTacToe.application
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.exe.manifest
+C:\Users\Acer\Documents\GitHub\Tic-Tac-Toe-Game\TicTacToe\obj\Debug\TicTacToe.application

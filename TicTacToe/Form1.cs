@@ -38,7 +38,7 @@ namespace TicTacToe
 
             if (CheckWinner())
             {
-                MessageBox.Show("The Winner is " + button.Text);
+                MessageBox.Show("The Winner is " + button.Text, "Winner!");
                 if(button.Text=="X")
                 {
                     xWins++;
@@ -62,7 +62,7 @@ namespace TicTacToe
 
             if (IsADraw())
             {
-                MessageBox.Show("Tie Game!");
+                MessageBox.Show("Tie Game!", "Draw!");
                 draws++;
                 Draws.Text = "Draws: " + draws;
 
@@ -151,7 +151,7 @@ namespace TicTacToe
                     {
                         return true;
                     }
-                    else if(buttons[0 ,2].Text==buttons[1,1].Text && buttons[0,2].Text == buttons[2,0].Text && buttons[i, i].Text != "" && buttons[2, 2].Text != "")
+                    else if(buttons[0 ,2].Text==buttons[1,1].Text && buttons[0,2].Text == buttons[2,0].Text && buttons[0, 2].Text != "")
                     {
                         return true;
                     }
