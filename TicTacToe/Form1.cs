@@ -96,9 +96,9 @@ namespace TicTacToe
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            Xwins.Text += " " + xWins;
-            Owins.Text += " " + oWins;
-            Draws.Text += " " + draws;
+            Xwins.Text = "X wins " + xWins;
+            Owins.Text = "O wins: " + oWins;
+            Draws.Text = "Draws: " + draws;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -111,12 +111,22 @@ namespace TicTacToe
             player = 2;
             turns = 0;
             A00.Text = A01.Text = A02.Text = A11.Text = A12.Text = A10.Text = A20.Text = A21.Text = A22.Text = "";
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    buttons[i, j].Enabled = true;
+                }
+            }
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
             NewGame();
             draws = xWins = oWins = 0;
+            Xwins.Text = "X wins " + xWins;
+            Owins.Text = "O wins: " + oWins;
+            Draws.Text = "Draws: " + draws;
         }
 
         private bool IsADraw()
@@ -135,18 +145,22 @@ namespace TicTacToe
         {
             for(int i=0;i<3;i++)
             {
-                if(i==0 && buttons[i,i].Text!="")
+                if(i==0)
                 {
-                    if (buttons[i, i].Text == buttons[i + 1, i + 1].Text && buttons[i, i].Text == buttons[i + 2, i + 2].Text)
+                    if (buttons[i, i].Text == buttons[i + 1, i + 1].Text && buttons[i, i].Text == buttons[i + 2, i + 2].Text && buttons[i, i].Text != "")
+                    {
+                        return true;
+                    }
+                    else if(buttons[0 ,2].Text==buttons[1,1].Text && buttons[0,2].Text == buttons[2,0].Text && buttons[i, i].Text != "" && buttons[2, 2].Text != "")
                     {
                         return true;
                     }
                 }
-                if(buttons[i,0].Text==buttons[i,1].Text && buttons[i,0].Text == buttons[i,2].Text && buttons[i,0].Text !="")
+                else if(buttons[i,0].Text==buttons[i,1].Text && buttons[i,0].Text == buttons[i,2].Text && buttons[i,0].Text !="")
                 {
                     return true;
                 }
-                if(buttons[0,i].Text == buttons[1,i].Text && buttons[0,i].Text == buttons[2,i].Text && buttons[0,i].Text!="")
+                else if(buttons[0,i].Text == buttons[1,i].Text && buttons[0,i].Text == buttons[2,i].Text && buttons[0,i].Text!="")
                 {
                     return true;
                 }
